@@ -1,7 +1,7 @@
 :root {
-  --cream: #f6edcf;
+  --cream: #fbf5df;
   --cream-light: #fff8e3;
-  --cream-deep: #e9ddbd;
+  --cream-deep: #eee4c9;
   --ink: #27342f;
   --mint: #bfe8cf;
   --mint-deep: #75b894;
@@ -129,37 +129,36 @@ svg {
   font-size: var(--text-sm);
 }
 
-.site-nav a:not(.nav-contact) {
-  position: relative;
+.site-nav a {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 0.85rem;
+  border: 3px solid var(--ink);
+  border-bottom-width: 7px;
+  background: #fffdf7;
+  color: var(--ink);
+  font-weight: 700;
+  line-height: 1;
+  transition:
+    transform 140ms var(--ease),
+    border-width 140ms var(--ease),
+    background-color 140ms ease;
 }
 
-.site-nav a:not(.nav-contact)::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -0.25rem;
-  left: 0;
-  height: 0.24rem;
-  background: var(--lavender-deep);
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 180ms ease;
+.site-nav a:hover {
+  background: var(--cream-light);
+  transform: translateY(-1px);
 }
 
-.site-nav a:not(.nav-contact):hover::after,
-.site-nav a:not(.nav-contact):focus-visible::after {
-  transform: scaleX(1);
-  transform-origin: left;
+.site-nav a:active {
+  border-bottom-width: 3px;
+  transform: translateY(4px);
 }
 
-.nav-contact {
-  padding: 0.62rem 0.9rem;
-  background: var(--ink);
-  color: var(--cream-light);
-}
-
-.nav-contact:hover {
-  background: var(--lavender-deep);
+.site-nav .nav-contact {
+  color: var(--ink);
 }
 
 .hero {
@@ -456,7 +455,7 @@ svg {
 .project h3 {
   max-width: none;
   font-family: var(--font-display);
-  font-size: clamp(2rem, 1.2rem + 2.1vw, 3.5rem);
+  font-size: clamp(1.8rem, 1.2rem + 1.8vw, 3rem);
   font-weight: 800;
   letter-spacing: -0.06em;
   line-height: 1.10;
@@ -616,7 +615,7 @@ svg {
 
 .toolbox {
   padding-block: var(--section-space);
-  background: #eee7f8;
+  background: #fcf8ef;
 }
 
 .section-heading--light > p {
@@ -724,7 +723,7 @@ svg {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(19rem, 0.85fr);
   gap: clamp(3rem, 8vw, 8rem);
-  align-items: end;
+  align-items: start;
 }
 
 .contact h2 {
@@ -1009,7 +1008,7 @@ svg {
   }
 
   .nav-contact {
-    padding: 0.38rem 0.6rem;
+    padding: 0.55rem 0.85rem;
   }
 
   .hero {
