@@ -188,8 +188,8 @@ svg {
   font-family: var(--font-display);
   font-size: var(--text-h1);
   font-weight: 800;
-  letter-spacing: 0.02em;
-  line-height: 0.88;
+  letter-spacing: 0.065em;
+  line-height: 1.02;
 }
 
 .hero-lead {
@@ -347,23 +347,6 @@ svg {
 
 .cat-button.is-poked .cat-portrait {
   animation: cat-hop 420ms steps(2, end);
-}
-
-.cat-eyes-open,
-.cat-eyes-squint {
-  transition: opacity 60ms steps(1, end);
-}
-
-.cat-eyes-squint {
-  opacity: 0;
-}
-
-.cat-button.is-blinking .cat-eyes-open {
-  opacity: 0;
-}
-
-.cat-button.is-blinking .cat-eyes-squint {
-  opacity: 1;
 }
 
 .cat-touch {
@@ -679,7 +662,7 @@ svg {
 
 .skill-list > div:nth-child(2),
 .skill-list > div:nth-child(3) {
-  background: #dff5e8;
+  background: #eef9f4;
 }
 
 .skill-list dt {
