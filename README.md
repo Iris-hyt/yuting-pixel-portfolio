@@ -24,4 +24,4 @@ python -m http.server 8090
 - `squirrel-plan-cover.png`：竞赛计划书封面
 - `cookie-product.jpg`：计划书内展示的山药爆浆曲奇产品图
 
-页面中的 Q 版美短小猫头像由内联 SVG 绘制。
+页面中的像素 Q 版美短小猫头像由内联 SVG 绘制。
