@@ -1,5 +1,5 @@
 :root {
-  --cream: #fbf5df;
+  --cream: #fdfaef;
   --cream-light: #fff8e3;
   --cream-deep: #eee4c9;
   --ink: #27342f;
@@ -188,7 +188,7 @@ svg {
   font-family: var(--font-display);
   font-size: var(--text-h1);
   font-weight: 800;
-  letter-spacing: -0.075em;
+  letter-spacing: 0.02em;
   line-height: 0.88;
 }
 
@@ -349,20 +349,49 @@ svg {
   animation: cat-hop 420ms steps(2, end);
 }
 
+.cat-eyes-open,
+.cat-eyes-squint {
+  transition: opacity 60ms steps(1, end);
+}
+
+.cat-eyes-squint {
+  opacity: 0;
+}
+
+.cat-button.is-blinking .cat-eyes-open {
+  opacity: 0;
+}
+
+.cat-button.is-blinking .cat-eyes-squint {
+  opacity: 1;
+}
+
 .cat-touch {
   position: absolute;
   right: 1.1rem;
   bottom: 1rem;
   z-index: 2;
-  padding: 0.45rem 0.65rem;
-  background: var(--lavender);
+  padding: 0.48rem 0.68rem;
+  border: 3px solid var(--ink);
+  border-bottom-width: 7px;
+  background: #fffdf7;
   color: var(--ink);
   font-size: var(--text-sm);
   font-weight: 700;
+  line-height: 1;
+  transition:
+    transform 140ms var(--ease),
+    border-width 140ms var(--ease),
+    background-color 140ms ease;
 }
 
 .cat-button:hover .cat-touch {
-  background: var(--peach);
+  background: var(--cream-light);
+}
+
+.cat-button:active .cat-touch {
+  border-bottom-width: 3px;
+  transform: translateY(4px);
 }
 
 .intro {
@@ -462,6 +491,15 @@ svg {
   text-wrap: balance;
 }
 
+.project-title-lines {
+  display: grid;
+  gap: 0.08em;
+}
+
+.project-title-lines span {
+  display: block;
+}
+
 .project-lead {
   max-width: 34rem;
   margin-top: 1.5rem;
@@ -528,7 +566,7 @@ svg {
   gap: 1rem;
   padding: 1rem;
   border: 4px solid var(--ink);
-  background: var(--lavender);
+  background: #f0eaf8;
 }
 
 .article-gallery__cover,
@@ -641,7 +679,7 @@ svg {
 
 .skill-list > div:nth-child(2),
 .skill-list > div:nth-child(3) {
-  background: var(--mint);
+  background: #dff5e8;
 }
 
 .skill-list dt {

@@ -48,9 +48,12 @@ catButton?.addEventListener("click", () => {
   catMessage.textContent = nextMessage;
   catLive.textContent = nextMessage;
   catButton.classList.remove("is-poked");
+  catButton.classList.remove("is-blinking");
   void catButton.offsetWidth;
   catButton.classList.add("is-poked");
+  catButton.classList.add("is-blinking");
   window.setTimeout(() => catButton.classList.remove("is-poked"), 450);
+  window.setTimeout(() => catButton.classList.remove("is-blinking"), 650);
 });
 
 const toast = document.querySelector("[data-toast]");
