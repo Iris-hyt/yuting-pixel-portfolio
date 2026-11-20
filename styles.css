@@ -598,6 +598,15 @@ svg {
   gap: 1rem;
   align-items: end;
   padding-top: 2rem;
+  background: transparent;
+  isolation: isolate;
+}
+
+.plan-gallery::before,
+.plan-gallery::after {
+  content: none !important;
+  display: none !important;
+  background: transparent !important;
 }
 
 .plan-gallery__document {
