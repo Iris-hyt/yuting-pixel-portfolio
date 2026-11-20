@@ -7,7 +7,6 @@
   --mint-deep: #79c79f;
   --lavender: #e6d8f8;
   --lavender-deep: #a489ca;
-  --peach: #f1c6b3;
   --font-text: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   --font-display: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   --text-sm: clamp(0.84rem, 0.8rem + 0.16vw, 0.95rem);
@@ -599,14 +598,6 @@ svg {
   gap: 1rem;
   align-items: end;
   padding-top: 2rem;
-}
-
-.plan-gallery::before {
-  content: "";
-  position: absolute;
-  inset: 0 18% 10% 10%;
-  z-index: -1;
-  background: var(--peach);
 }
 
 .plan-gallery__document {
