@@ -1,12 +1,12 @@
 :root {
-  --cream: #fff7df;
-  --cream-light: #fffdf6;
-  --cream-deep: #f4e9d2;
-  --ink: #23332c;
-  --mint: #c9f2dd;
-  --mint-deep: #79c79f;
-  --lavender: #e6d8f8;
-  --lavender-deep: #a489ca;
+  --cream: #fff6e2;
+  --cream-light: #fffaf0;
+  --cream-deep: #f8e7c8;
+  --ink: #2f372f;
+  --mint: #d8f1c9;
+  --mint-deep: #86b871;
+  --lavender: #edd8f0;
+  --lavender-deep: #a67ab2;
   --font-text: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   --font-display: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   --text-sm: clamp(0.84rem, 0.8rem + 0.16vw, 0.95rem);
@@ -136,7 +136,7 @@ svg {
   padding: 0.55rem 0.85rem;
   border: 3px solid var(--ink);
   border-bottom-width: 7px;
-  background: #ffffff;
+  background: #fffef9;
   color: var(--ink);
   font-weight: 700;
   line-height: 1;
@@ -215,7 +215,7 @@ svg {
   padding: 0.72rem 1.25rem;
   border: 4px solid var(--ink);
   border-bottom-width: 10px;
-  background: #ffffff;
+  background: #fffef9;
   color: var(--ink);
   font-size: var(--text-sm);
   font-weight: 700;
@@ -274,7 +274,7 @@ svg {
   min-height: clamp(30rem, 55vw, 43rem);
   overflow: hidden;
   border: 4px solid var(--ink);
-  background: #e9fbf2;
+  background: #eff8df;
 }
 
 .cat-stage__label {
@@ -356,7 +356,7 @@ svg {
   padding: 0.48rem 0.68rem;
   border: 3px solid var(--ink);
   border-bottom-width: 7px;
-  background: #ffffff;
+  background: #fffef9;
   color: var(--ink);
   font-size: var(--text-sm);
   font-weight: 700;
@@ -519,7 +519,7 @@ svg {
   gap: 0.1rem;
   margin-top: 1.9rem;
   padding: 1rem 1.15rem;
-  background: #eefbf4;
+  background: #f1f9e5;
 }
 
 .project-result span {
@@ -548,7 +548,7 @@ svg {
   gap: 1rem;
   padding: 1rem;
   border: 4px solid var(--ink);
-  background: #f8f1ff;
+  background: #f8ecf5;
 }
 
 .article-gallery__cover,
@@ -627,7 +627,7 @@ svg {
 
 .toolbox {
   padding-block: var(--section-space);
-  background: #fffdf7;
+  background: #fff9ec;
 }
 
 .section-heading--light > p {
@@ -653,7 +653,7 @@ svg {
 
 .skill-list > div:nth-child(2),
 .skill-list > div:nth-child(3) {
-  background: #effbf5;
+  background: #eef8df;
 }
 
 .skill-list dt {
@@ -774,7 +774,7 @@ svg {
 }
 
 .button--cream {
-  background: #ffffff;
+  background: #fffef9;
   color: var(--ink);
 }
 
@@ -783,7 +783,7 @@ svg {
 }
 
 .button--outline {
-  background: #ffffff;
+  background: #fffef9;
   color: var(--ink);
 }
 
@@ -799,7 +799,7 @@ svg {
 
 .footer {
   padding-block: 2rem;
-  background: #e1f8ed;
+  background: #e7f5d8;
   color: var(--ink);
 }
 
