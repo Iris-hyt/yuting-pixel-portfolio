@@ -6,6 +6,7 @@
 
 - 推文链接：https://mp.weixin.qq.com/s/5FTx7iNjre3Jh4NEm_O0eA
 - “三只松鼠”休闲食品竞赛策划书链接：https://www.kdocs.cn/l/cagrDmr5srlT
+- 麻辣王子商演活动策划案：`assets/麻辣王子商演活动策划案.pptx`
 - 简历：`assets/黄钰婷-简历.pdf`
 
 ## 本地预览
@@ -23,5 +24,6 @@ python -m http.server 8090
 - `wechat-cover.jpg`、`wechat-city.jpg`：公众号原文截图节选
 - `squirrel-plan-cover.png`：竞赛计划书封面
 - `cookie-product.jpg`：计划书内展示的山药爆浆曲奇产品图
+- `cover.webp`、`stage.webp`、`snack.webp`：麻辣王子商演活动策划案的封面与现场视觉
 
 页面中的像素 Q 版美短小猫头像由内联 SVG 绘制。
