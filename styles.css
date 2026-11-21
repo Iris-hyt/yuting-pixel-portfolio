@@ -714,19 +714,6 @@ svg {
   transition: transform 800ms var(--ease);
 }
 
-.campaign-shot > span {
-  position: absolute;
-  right: 0.7rem;
-  bottom: 0.7rem;
-  left: 0.7rem;
-  padding: 0.42rem 0.55rem;
-  background: var(--cream-light);
-  color: var(--ink);
-  font-size: var(--text-sm);
-  font-weight: 700;
-  text-align: center;
-}
-
 .campaign-gallery:hover img {
   transform: scale(1.025);
 }
