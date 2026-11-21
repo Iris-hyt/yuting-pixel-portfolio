@@ -24,6 +24,6 @@ python -m http.server 8090
 - `wechat-cover.jpg`、`wechat-city.jpg`：公众号原文截图节选
 - `squirrel-plan-cover.png`：竞赛计划书封面
 - `cookie-product.jpg`：计划书内展示的山药爆浆曲奇产品图
-- `cover.webp`、`stage.webp`、`snack.webp`：麻辣王子商演活动策划案的封面与现场视觉
+- `cover.webp`、`snack.webp`：麻辣王子商演活动策划案的封面与产品视觉
 
 页面中的像素 Q 版美短小猫头像由内联 SVG 绘制。

@@ -539,16 +539,6 @@ svg {
   margin-top: 2rem;
 }
 
-.campaign-metrics {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.campaign-metrics > div {
-  display: grid;
-  gap: 0.2rem;
-}
-
 .article-gallery,
 .plan-gallery {
   position: relative;
@@ -650,7 +640,7 @@ svg {
 
 .campaign-gallery {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(10rem, 0.55fr);
+  grid-template-columns: 1fr;
   gap: 1rem;
   min-width: 0;
 }
@@ -713,8 +703,8 @@ svg {
   background: var(--cream-light);
 }
 
-.campaign-shot--stage {
-  min-height: 22rem;
+.campaign-shot--snack {
+  min-height: clamp(20rem, 36vw, 32rem);
 }
 
 .campaign-shot img {
@@ -1267,20 +1257,14 @@ svg {
     line-height: 1.5;
   }
 
-  .campaign-metrics {
-    grid-template-columns: 1fr;
-    gap: 0.7rem;
-  }
-
-  .campaign-gallery {
-    grid-template-columns: 1fr;
-  }
-
   .campaign-cover,
-  .campaign-shot,
-  .campaign-shot--stage {
+  .campaign-shot {
     grid-column: 1;
     min-height: 16rem;
+  }
+
+  .campaign-shot--snack {
+    min-height: 20rem;
   }
 
   .campaign-cover {
