@@ -1,262 +1,338 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#fff6e2">
-  <meta name="description" content="黄钰婷的作品小站。内容策划、品牌传播与项目协作，收录公众号推文、休闲食品竞赛策划书和商业宣传活动策划。">
-  <meta name="author" content="黄钰婷">
+  <meta name="description" content="Huang Yuting's portfolio in content planning, brand communication, market research, and live project coordination.">
+  <meta name="author" content="Huang Yuting">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="zh_CN">
-  <meta property="og:title" content="黄钰婷的作品小站">
-  <meta property="og:description" content="公众号推文、休闲食品竞赛策划书与商业宣传活动策划作品集。">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Huang Yuting — Portfolio">
+  <meta property="og:description" content="Content planning, brand communication, and live project coordination.">
   <meta property="og:image" content="assets/social-preview.png">
   <meta name="twitter:card" content="summary_large_image">
-  <title>黄钰婷的作品小站</title>
+  <title>Huang Yuting — Portfolio</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20261123-sky-blue">
-  <script src="script.js?v=20261123-sky-blue" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261124-cat-pages">
+  <script src="script.js?v=20261124-cat-pages" defer></script>
 </head>
-<body>
-  <a class="skip-link" href="#main">跳到主要内容</a>
+<body class="is-cover">
+  <svg class="svg-filters" width="0" height="0" aria-hidden="true" focusable="false">
+    <filter id="rough-ink" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="8" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+  <a class="skip-link" href="#cover">Skip to main content</a>
 
   <header class="site-header container">
-    <nav class="site-nav" aria-label="主要导航">
-      <a href="#work">作品</a>
-      <a class="nav-contact" href="#contact">联系我</a>
+    <a class="site-name" href="#cover" data-page-target="cover">Huang Yuting</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#work" data-page-target="work">Selected work</a>
+      <a href="#about" data-page-target="about">About</a>
+      <a href="#contact" data-page-target="contact">Contact</a>
+      <a class="nav-resume" href="assets/黄钰婷简历.pdf?v=20261124-en" target="_blank" rel="noopener">Résumé</a>
     </nav>
   </header>
 
-  <main id="main">
-    <section class="hero container" id="top" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="hero-role">内容策划 · 品牌传播 · 项目协作</p>
-        <h1 id="hero-title">黄钰婷的<br>作品小站</h1>
-        <div class="hero-actions">
-          <a class="button" href="#work">查看作品</a>
-          <a class="quiet-link" href="assets/黄钰婷简历.pdf?v=20261123-title" target="_blank" rel="noopener">下载简历</a>
+  <main class="site-main">
+    <div class="page-deck container" data-page-deck>
+      <article class="deck-page deck-page--cover is-active" id="cover" data-page="cover" aria-labelledby="hero-title">
+        <div class="cover-grid">
+          <div class="cover-title-wrap">
+            <h1 class="portfolio-title" id="hero-title">
+              <span data-letter="P">P</span><span data-letter="O">O</span><span data-letter="R">R</span><span data-letter="T">T</span><span data-letter="F">F</span><span data-letter="O">O</span><span data-letter="L">L</span><span data-letter="I">I</span><span data-letter="O">O</span>
+            </h1>
+          </div>
+
+          <div class="cover-art" aria-label="Illustrated cat and page-turn control">
+            <svg class="doodle-star doodle-star--one" viewBox="0 0 100 100" aria-hidden="true">
+              <path d="m50 6 10 26 29 2-23 18 8 28-24-15-24 15 8-28L11 34l29-2Z"/>
+            </svg>
+            <svg class="doodle-star doodle-star--two" viewBox="0 0 100 100" aria-hidden="true">
+              <path d="m50 6 10 26 29 2-23 18 8 28-24-15-24 15 8-28L11 34l29-2Z"/>
+            </svg>
+
+            <div class="cat-card">
+              <svg class="cat-portrait" viewBox="0 0 360 320" role="img" aria-labelledby="cat-title cat-desc">
+                <title id="cat-title">A pixel-style American Shorthair cat</title>
+                <desc id="cat-desc">A friendly gray tabby cat with a round face, pink ears, dark violet outlines, and pale blue whiskers.</desc>
+                <g shape-rendering="crispEdges">
+                  <path d="M64 68H78V52H94V36H132V52H146V68H214V52H228V36H266V52H282V68H298V96H314V228H298V246H278V260H258V270H102V260H82V246H62V228H44V96H64Z" fill="#544573"/>
+                  <path d="M72 74H84V62H96V48H126V60H142V74H218V60H234V48H264V60H276V74H290V98H304V222H288V238H270V252H254V260H106V252H90V238H72V222H56V98H72Z" fill="#b9c1bd"/>
+                  <path d="M80 80H94V68H106V80H118V94H130V112H118V120H106V110H96V98H80Z" fill="#f7bea8"/>
+                  <path d="M280 80H266V68H254V80H242V94H230V112H242V120H254V110H264V98H280Z" fill="#f7bea8"/>
+                  <path d="M156 72H168V112H156Z" fill="#7f8f87"/>
+                  <path d="M174 68H186V116H174Z" fill="#7f8f87"/>
+                  <path d="M192 72H204V112H192Z" fill="#7f8f87"/>
+                  <path d="M102 156H142V198H102Z" fill="#544573"/>
+                  <path d="M218 156H258V198H218Z" fill="#544573"/>
+                  <path d="M78 204H110V194H138V202H222V194H250V204H282V224H270V238H252V248H108V238H90V224H78Z" fill="#fff3df"/>
+                  <path d="M78 208H106V226H78Z" fill="#f7bea8"/>
+                  <path d="M254 208H282V226H254Z" fill="#f7bea8"/>
+                  <path d="M16 182H70V192H16ZM24 212H70V222H24ZM344 182H290V192H344ZM336 212H290V222H336Z" fill="#544573"/>
+                </g>
+              </svg>
+            </div>
+
+            <a class="star-turn" href="#work" data-page-target="work" aria-label="Turn the page and explore my selected work">
+              <svg viewBox="0 0 100 100" aria-hidden="true">
+                <path d="m50 6 10 26 29 2-23 18 8 28-24-15-24 15 8-28L11 34l29-2Z"/>
+              </svg>
+            </a>
+          </div>
         </div>
-      </div>
+      </article>
 
-      <div class="cat-stage" aria-label="像素 Q 版美短小猫互动区">
-        <div class="cat-stage__label">小猫值班中</div>
-        <button class="cat-button" type="button" data-cat-button aria-label="点击像素美短小猫">
-          <svg class="cat-portrait" viewBox="0 0 360 320" role="img" aria-labelledby="cat-title cat-desc">
-            <title id="cat-title">一只像素 Q 版美短小猫头像</title>
-            <desc id="cat-desc">灰色虎斑美短圆脸、紫色粗轮廓、粉色耳朵和腮红、深灰额纹，整体由干净的大色块组成。</desc>
-            <g shape-rendering="crispEdges">
-              <path
-                d="M64 68H78V52H94V36H132V52H146V68H214V52H228V36H266V52H282V68H298V96H314V228H298V246H278V260H258V270H102V260H82V246H62V228H44V96H64Z"
-                fill="#544573"
-              />
-              <path
-                d="M72 74H84V62H96V48H126V60H142V74H218V60H234V48H264V60H276V74H290V98H304V222H288V238H270V252H254V260H106V252H90V238H72V222H56V98H72Z"
-                fill="#b9c1bd"
-              />
+      <article class="deck-page deck-page--index" id="work" data-page="work" aria-labelledby="work-title" aria-hidden="true" inert>
+        <div class="page-tools">
+          <a href="#cover" data-page-target="cover">Back to cover</a>
+        </div>
 
-              <path d="M80 80H94V68H106V80H118V94H130V112H118V120H106V110H96V98H80Z" fill="#f7bea8"/>
-              <path d="M280 80H266V68H254V80H242V94H230V112H242V120H254V110H264V98H280Z" fill="#f7bea8"/>
-
-              <path d="M156 72H168V112H156Z" fill="#7f8f87"/>
-              <path d="M174 68H186V116H174Z" fill="#7f8f87"/>
-              <path d="M192 72H204V112H192Z" fill="#7f8f87"/>
-              <path d="M102 156H142V198H102Z" fill="#544573"/>
-              <path d="M218 156H258V198H218Z" fill="#544573"/>
-
-              <path d="M78 204H110V194H138V202H222V194H250V204H282V224H270V238H252V248H108V238H90V224H78Z" fill="#fff3df"/>
-              <path d="M78 208H106V226H78Z" fill="#f7bea8"/>
-              <path d="M254 208H282V226H254Z" fill="#f7bea8"/>
-              <path d="M16 182H70V192H16ZM24 212H70V222H24ZM344 182H290V192H344ZM336 212H290V222H336Z" fill="#544573"/>
-            </g>
-          </svg>
-        </button>
-      </div>
-    </section>
-
-    <section class="work" id="work" aria-label="作品">
-      <div class="container">
-        <article class="project project--article">
-          <div class="project-copy">
-            <h3 class="project-title-lines">
-              <span>内容策划</span>
-              <span>美术编辑</span>
-            </h3>
-            <ul class="project-points">
-              <li>完成选题主题与内容结构梳理</li>
-              <li>承担美术编辑与整体图文编排</li>
-              <li>通过分批发布节奏维持读者阅读体验</li>
-            </ul>
-            <div class="project-result">
-              <span>发布平台</span>
-              <strong>科奕报社公众号</strong>
-            </div>
-            <a class="button" href="https://mp.weixin.qq.com/s/5FTx7iNjre3Jh4NEm_O0eA" target="_blank" rel="noopener noreferrer">
-              打开公众号原文
-            </a>
+        <div class="work-index-grid">
+          <div class="work-index-copy">
+            <h2 id="work-title">Pet a cat.<br>Open a story.</h2>
+            <p>Move your cursor over a cat to see its project title, then click the cat to open the work.</p>
           </div>
 
-          <figure class="article-gallery">
-            <div class="article-gallery__cover">
-              <img
-                src="assets/wechat-cover.jpg"
-                alt="公众号推文《我携了故乡的传声筒，希望你不要嫌它吵》的封面和正文截图"
-                width="780"
-                height="2133"
-                loading="lazy"
-              >
+          <div class="cat-menu" aria-label="Project entrances">
+            <a class="cat-project" href="#story" data-page-target="story" aria-label="Open Content Planning and Visual Editing">
+              <span class="cat-bubble" aria-hidden="true">Content Planning<br>&amp; Visual Editing</span>
+              <span class="cat-figure">
+                <svg viewBox="0 0 240 180" aria-hidden="true">
+                  <path class="cat-tail" d="M201 139c28 1 31 19 16 28 7-12 1-19-14-19"/>
+                  <path class="cat-body" d="M34 134C18 129 13 111 25 99 16 82 29 65 47 66 50 45 74 35 92 49 106 25 139 27 150 51 171 35 195 48 196 69 218 72 226 95 211 111 224 126 215 143 195 146 192 164 166 173 150 160 138 178 105 177 92 160 70 173 47 164 46 144Z"/>
+                  <g class="cat-face">
+                    <path d="M72 97c7-7 16-7 23 0M143 97c7-7 16-7 23 0"/>
+                    <path d="m114 111 6 5 6-5M120 117v8m0 0c-6 8-16 7-19-1m19 1c6 8 16 7 19-1"/>
+                    <path d="M54 112H32m24 13-20 1m174-14h22m-24 13 20 1"/>
+                  </g>
+                </svg>
+              </span>
+              <span class="cat-caption">Feature story</span>
+            </a>
+
+            <a class="cat-project" href="#cookie" data-page-target="cookie" aria-label="Open Concept Design and Market Research">
+              <span class="cat-bubble" aria-hidden="true">Concept Design<br>&amp; Market Research</span>
+              <span class="cat-figure">
+                <svg viewBox="0 0 240 180" aria-hidden="true">
+                  <path class="cat-body" d="M34 134C18 129 13 111 25 99 16 82 29 65 47 66 50 45 74 35 92 49 106 25 139 27 150 51 171 35 195 48 196 69 218 72 226 95 211 111 224 126 215 143 195 146 192 164 166 173 150 160 138 178 105 177 92 160 70 173 47 164 46 144Z"/>
+                  <g class="cat-face cat-face--glasses">
+                    <circle cx="89" cy="101" r="18"/>
+                    <circle cx="158" cy="101" r="18"/>
+                    <path d="M107 101h33M71 98l-17-3M176 98l17-3"/>
+                    <circle class="cat-pupil" cx="94" cy="102" r="6"/>
+                    <circle class="cat-pupil" cx="153" cy="102" r="6"/>
+                    <path d="m114 123 6 4 6-4M54 127H32m159 0h22"/>
+                  </g>
+                </svg>
+              </span>
+              <span class="cat-caption">Cookie concept</span>
+            </a>
+
+            <a class="cat-project" href="#campaign" data-page-target="campaign" aria-label="Open Mala Prince Mall Campaign">
+              <span class="cat-bubble" aria-hidden="true">Mala Prince<br>Mall Campaign</span>
+              <span class="cat-figure">
+                <svg viewBox="0 0 240 180" aria-hidden="true">
+                  <path class="cat-tail" d="M39 137C12 141 3 158 17 169c-1-13 7-19 20-17"/>
+                  <path class="cat-body" d="M34 134C18 129 13 111 25 99 16 82 29 65 47 66 50 45 74 35 92 49 106 25 139 27 150 51 171 35 195 48 196 69 218 72 226 95 211 111 224 126 215 143 195 146 192 164 166 173 150 160 138 178 105 177 92 160 70 173 47 164 46 144Z"/>
+                  <g class="cat-face">
+                    <circle class="cat-eye" cx="82" cy="99" r="5"/>
+                    <circle class="cat-eye" cx="155" cy="99" r="5"/>
+                    <path d="m114 114 6 5 6-5"/>
+                    <path d="M120 120c0 10-8 13-16 9m16-9c0 10 8 13 16 9"/>
+                    <path d="M54 108H32m24 13-20 1m174-14h22m-24 13 20 1"/>
+                  </g>
+                </svg>
+              </span>
+              <span class="cat-caption">Mala Prince</span>
+            </a>
+          </div>
+        </div>
+
+        <p class="page-foot">Three projects · Choose a cat to enter <span aria-hidden="true">→</span></p>
+      </article>
+
+      <article class="deck-page deck-page--project" id="story" data-page="story" aria-labelledby="story-title" aria-hidden="true" inert>
+        <div class="page-tools">
+          <a href="#work" data-page-target="work">Back to all projects</a>
+        </div>
+
+        <div class="project-page-grid">
+          <div class="project-page-copy">
+            <h2 id="story-title">Content planning<br>&amp; editing</h2>
+            <p class="project-kind">Editorial storytelling · Keyi Newspaper</p>
+            <p>A long-form feature shaped around memory, place, and the things that carry us back home.</p>
+            <ul class="project-points">
+              <li>Shaped the theme, narrative structure, and release rhythm.</li>
+              <li>Art-directed and edited the visual flow of the story.</li>
+              <li>Balanced personal reflection with a clear editorial point of view.</li>
+            </ul>
+            <div class="project-actions">
+              <a class="button" href="https://mp.weixin.qq.com/s/5FTx7iNjre3Jh4NEm_O0eA" target="_blank" rel="noopener noreferrer">Read the full story</a>
             </div>
-            <div class="article-gallery__detail">
-              <img
-                src="assets/wechat-city.jpg"
-                alt="公众号推文中展示城市与家乡主题的长图文截图"
-                width="780"
-                height="2333"
-                loading="lazy"
-              >
+          </div>
+
+          <figure class="project-page-media article-media">
+            <div class="article-media__cover">
+              <img src="assets/wechat-cover.jpg" alt="Excerpt from the WeChat feature about home and memory" width="780" height="2133">
             </div>
-            <figcaption>公众号原文节选。点击左侧按钮可阅读完整版本。</figcaption>
+            <div class="article-media__detail">
+              <img src="assets/wechat-city.jpg" alt="Editorial spread about city and hometown" width="780" height="2333">
+            </div>
+            <figcaption>Published by Keyi Newspaper on WeChat.</figcaption>
           </figure>
-        </article>
+        </div>
 
-        <article class="project project--plan">
-          <div class="project-copy">
-            <h3 class="project-title-lines">
-              <span>产品策划</span>
-              <span>市场调研</span>
-            </h3>
+        <div class="page-pager">
+          <a href="#work" data-page-target="work">All projects</a>
+          <a href="#cookie" data-page-target="cookie">Next project: Cookie concept →</a>
+        </div>
+      </article>
+
+      <article class="deck-page deck-page--project" id="cookie" data-page="cookie" aria-labelledby="cookie-title" aria-hidden="true" inert>
+        <div class="page-tools">
+          <a href="#work" data-page-target="work">Back to all projects</a>
+        </div>
+
+        <div class="project-page-grid">
+          <div class="project-page-copy">
+            <h2 id="cookie-title">Concept design<br>&amp; research</h2>
+            <p class="project-kind">Product strategy · “Good for You” Yam Lava Cookie</p>
+            <p>A research-led snack concept connecting market insight, product development, packaging, and launch thinking.</p>
             <ul class="project-points">
-              <li>作为总负责人调研市场并设计产品</li>
-              <li>参与概念与策划书，协调 5 人跨专业团队</li>
-              <li>推进工艺、包装与营销方案的整合表达</li>
+              <li>Led market research and product concept development.</li>
+              <li>Built the proposal and coordinated a five-person, cross-disciplinary team.</li>
+              <li>Unified product, packaging, and marketing in one proposal.</li>
             </ul>
-            <div class="project-result">
-              <span>作品名称</span>
-              <strong>“药”你健康——山药爆浆曲奇</strong>
+            <div class="project-actions">
+              <a class="button" href="https://www.kdocs.cn/l/cagrDmr5srlT" target="_blank" rel="noopener noreferrer">Open the complete proposal</a>
             </div>
-            <a class="button" href="https://www.kdocs.cn/l/cagrDmr5srlT" target="_blank" rel="noopener noreferrer">
-              打开竞赛策划书
-            </a>
           </div>
 
-          <figure class="plan-gallery">
-            <div class="plan-gallery__document">
-              <img
-                src="assets/squirrel-plan-cover.png"
-                alt="第四届“三只松鼠杯”休闲食品创新大赛作品计划书封面"
-                width="992"
-                height="1403"
-                loading="lazy"
-              >
+          <figure class="project-page-media plan-media">
+            <div class="plan-media__document">
+              <img src="assets/squirrel-plan-cover.png" alt="Cover of the competition proposal for the yam lava cookie" width="992" height="1403">
             </div>
-            <div class="plan-gallery__product">
-              <img
-                src="assets/cookie-product.jpg"
-                alt="掰开后的山药爆浆曲奇，展示白色绵软内馅"
-                width="816"
-                height="816"
-                loading="lazy"
-              >
-              <span>山药爆浆曲奇产品图</span>
+            <div class="plan-media__product">
+              <img src="assets/cookie-product.jpg" alt="A yam lava cookie broken open to reveal its filling" width="816" height="816">
             </div>
-            <figcaption>计划书封面与作品产品图。点击左侧按钮可阅读完整策划书。</figcaption>
+            <figcaption>Competition proposal and the yam lava cookie concept.</figcaption>
           </figure>
-        </article>
+        </div>
 
-        <article class="project project--campaign" id="campaign">
-          <div class="project-copy">
-            <h3 class="project-title-lines">
-              <span>麻辣王子</span>
-              <span>商业宣传活动策划</span>
-            </h3>
+        <div class="page-pager">
+          <a href="#story" data-page-target="story">← Previous project</a>
+          <a href="#campaign" data-page-target="campaign">Next project: Mala Prince →</a>
+        </div>
+      </article>
+
+      <article class="deck-page deck-page--project" id="campaign" data-page="campaign" aria-labelledby="campaign-title" aria-hidden="true" inert>
+        <div class="page-tools">
+          <a href="#work" data-page-target="work">Back to all projects</a>
+        </div>
+
+        <div class="project-page-grid">
+          <div class="project-page-copy">
+            <h2 id="campaign-title">Mala Prince<br>mall campaign</h2>
+            <p class="project-kind">Live brand experience · Guangzhou</p>
+            <p>A two-day activation bringing stage performances, games, tasting, and sales into one continuous brand journey.</p>
             <ul class="project-points">
-              <li>围绕增城万达连续两天商演，串联品牌宣传、演艺热场、互动游戏与试吃购买</li>
-              <li>规划 LED 主屏、舞台、观众席、试吃摊位与购买摊位组成的现场动线</li>
-              <li>制定 16 人现场分工，以及设备、人流和食品安全应急预案</li>
+              <li>Mapped the live flow across the screen, stage, audience area, and sales booths.</li>
+              <li>Planned performances, interactions, sampling, and purchase moments.</li>
+              <li>Defined roles for 16 on-site staff plus equipment, crowd, and food-safety contingencies.</li>
             </ul>
-            <a class="button" href="assets/麻辣王子商演活动策划案.pptx" download>
-              下载完整策划案
-            </a>
+            <div class="project-actions">
+              <a class="button" href="assets/麻辣王子商演活动策划案.pptx" download>Download the campaign plan</a>
+            </div>
           </div>
 
-          <figure class="campaign-gallery">
-            <div class="campaign-cover">
-              <img
-                src="assets/cover.webp"
-                alt="麻辣王子增城万达商演活动策划案封面背景"
-                width="1536"
-                height="954"
-                loading="lazy"
-              >
-              <div class="campaign-cover__copy">
-                <span>BRAND ROADSHOW</span>
-                <strong>麻辣王子</strong>
-                <p>增城万达商演活动策划案</p>
-                <small>广州 · 连续两天 · 2026.07</small>
+          <figure class="project-page-media campaign-media">
+            <div class="campaign-media__cover">
+              <img src="assets/cover.webp" alt="Visual from the Mala Prince two-day mall campaign" width="1536" height="954">
+            </div>
+            <div class="campaign-media__snack">
+              <img src="assets/snack.webp" alt="Mala Prince spicy strips at a tasting station" width="1024" height="954">
+            </div>
+            <figcaption>Campaign concept and product experience for a two-day mall activation.</figcaption>
+          </figure>
+        </div>
+
+        <div class="page-pager">
+          <a href="#cookie" data-page-target="cookie">← Previous project</a>
+          <a href="#about" data-page-target="about">About me →</a>
+        </div>
+      </article>
+
+      <article class="deck-page deck-page--about" id="about" data-page="about" aria-labelledby="about-title" aria-hidden="true" inert>
+        <div class="page-tools">
+          <a href="#work" data-page-target="work">Back to projects</a>
+        </div>
+
+        <div class="about-page-grid">
+          <div class="about-page-copy">
+            <h2 id="about-title">Idea-led.<br>Detail-driven.</h2>
+            <p>My work starts with listening closely: to a brief, an audience, a product, or the tiny detail everyone else overlooked. Then I shape that insight into a clear story and a plan that can actually happen.</p>
+            <p>I move comfortably between writing, visual editing, research, and on-the-ground coordination — keeping the big idea and the practical details in the same conversation.</p>
+          </div>
+
+          <div class="toolbox-panel">
+            <h3>My toolbox</h3>
+            <dl class="skill-list">
+              <div>
+                <dt>Content &amp; communication</dt>
+                <dd>Editorial planning / WeChat publishing / Live activation</dd>
               </div>
+              <div>
+                <dt>Research &amp; analysis</dt>
+                <dd>Market research / Insight synthesis / Excel / SPSS / Prism</dd>
+              </div>
+              <div>
+                <dt>Visual &amp; media</dt>
+                <dd>Photoshop / Premiere / CapCut / Editorial layout</dd>
+              </div>
+              <div>
+                <dt>Collaboration</dt>
+                <dd>Cross-team communication / Project coordination / Codex / Gemini</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="page-pager">
+          <a href="#work" data-page-target="work">View selected work</a>
+          <a href="#contact" data-page-target="contact">Let’s connect →</a>
+        </div>
+      </article>
+
+      <article class="deck-page deck-page--contact" id="contact" data-page="contact" aria-labelledby="contact-title" aria-hidden="true" inert>
+        <div class="page-tools">
+          <a href="#cover" data-page-target="cover">Back to cover</a>
+        </div>
+
+        <div class="contact-page-grid">
+          <div>
+            <h2 id="contact-title">Let’s make<br>it memorable.</h2>
+            <p>Have a story to shape, a campaign to plan, or a project that needs a careful pair of hands?</p>
+          </div>
+          <div class="contact-panel">
+            <a class="contact-email" href="mailto:13289885620@163.com">13289885620@163.com</a>
+            <div class="contact-actions">
+              <a class="button" href="mailto:13289885620@163.com">Send an email</a>
+              <button class="button button--outline" type="button" data-copy-email="13289885620@163.com">Copy email</button>
             </div>
-            <div class="campaign-shot campaign-shot--snack">
-              <img
-                src="assets/snack.webp"
-                alt="麻辣王子辣条产品试吃展示特写"
-                width="1024"
-                height="954"
-                loading="lazy"
-              >
-            </div>
-            <figcaption>两日商演策划、现场动线与执行方案，点击按钮下载完整版。</figcaption>
-          </figure>
-        </article>
-      </div>
-    </section>
-
-    <section class="toolbox" id="toolbox" aria-labelledby="toolbox-title">
-      <div class="container">
-        <div class="section-heading section-heading--light">
-          <h2 id="toolbox-title">我的工作台</h2>
-        </div>
-        <dl class="skill-list">
-          <div>
-            <dt>内容与传播</dt>
-            <dd>选题策划 / 公众号编辑 / 活动执行</dd>
-          </div>
-          <div>
-            <dt>研究与分析</dt>
-            <dd>市场调研 / 信息整理 / Excel / SPSS / Prism</dd>
-          </div>
-          <div>
-            <dt>视觉与影像</dt>
-            <dd>Photoshop / Premiere / 剪映 / 图文排版</dd>
-          </div>
-          <div>
-            <dt>协作与工具</dt>
-            <dd>跨专业沟通 / 项目推进 / Codex / Gemini</dd>
-          </div>
-        </dl>
-      </div>
-    </section>
-
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="container contact-grid">
-        <div>
-          <h2 id="contact-title">联系我吧</h2>
-        </div>
-        <div class="contact-panel">
-          <a class="contact-email" href="mailto:13289885620@163.com">13289885620@163.com</a>
-          <div class="contact-actions">
-            <a class="button button--cream" href="mailto:13289885620@163.com">发送邮件</a>
-            <button class="button button--outline" type="button" data-copy-email="13289885620@163.com">复制邮箱</button>
+            <a class="doodle-link" href="#work" data-page-target="work">Or browse the work again</a>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p class="pixel-footer-text">Iris</p>
-      <a class="pixel-footer-text" href="#top">回到顶部</a>
+        <div class="contact-foot">
+          <p>Huang Yuting · Portfolio / 2026</p>
+          <p>Made by hand, powered by curiosity.</p>
+        </div>
+      </article>
     </div>
-  </footer>
+  </main>
 
   <div class="toast" role="status" aria-live="polite" aria-atomic="true" data-toast></div>
 </body>

@@ -1,29 +1,41 @@
-# 黄钰婷的作品小站
+# Huang Yuting — Portfolio
 
-独立于旧版 `huang-yuting-portfolio` 的单页作品集。页面使用原生 HTML、CSS 和 JavaScript，无需构建步骤。
+An English-language, click-through portfolio built with plain HTML, CSS, and JavaScript. The site uses a hand-drawn paper style with blue crayon-filled lettering, grid-paper backgrounds, and illustrated cat navigation.
 
-## 内容
+## Page flow
 
-- 推文链接：https://mp.weixin.qq.com/s/5FTx7iNjre3Jh4NEm_O0eA
-- “三只松鼠”休闲食品竞赛策划书链接：https://www.kdocs.cn/l/cagrDmr5srlT
-- 麻辣王子商演活动策划案：`assets/麻辣王子商演活动策划案.pptx`
-- 简历：`assets/黄钰婷简历.pdf`
+- The cover shows only the hand-lettered “PORTFOLIO” wordmark, cat artwork, and stars.
+- Clicking the blue star opens the project index.
+- Hovering or focusing a cat reveals its English project title. Clicking the cat opens that project page.
+- Project pages include the supporting details, original visuals, external work links, and previous/next navigation.
+- The About and Contact pages are accessed through the header or in-page navigation.
+- Desktop uses one fixed landscape page at a time. Mobile allows scrolling inside the active page when its content needs more room.
 
-## 本地预览
+## Files
 
-直接打开 `index.html`，或在目录中运行：
+```text
+.
+├─ index.html
+├─ styles.css
+├─ script.js
+├─ assets/
+│  ├─ fonts/                       Local Londrina Solid and Nunito font files
+│  ├─ crayon-fill.svg              Uneven crayon fill used by the display title
+│  ├─ grid-paper.svg               Blue grid-paper texture
+│  ├─ paper-corners.svg            Hand-drawn corner hatching and stars
+│  ├─ 黄钰婷简历.pdf
+│  └─ project images and campaign files
+└─ README.md
+```
+
+## Local preview
+
+Open `index.html` directly, or run:
 
 ```powershell
 python -m http.server 8090
 ```
 
-然后访问 `http://localhost:8090/`。
+Then visit `http://localhost:8090/`.
 
-## 视觉素材
-
-- `wechat-cover.jpg`、`wechat-city.jpg`：公众号原文截图节选
-- `squirrel-plan-cover.png`：竞赛计划书封面
-- `cookie-product.jpg`：计划书内展示的山药爆浆曲奇产品图
-- `cover.webp`、`snack.webp`：麻辣王子商演活动策划案的封面与产品视觉
-
-页面中的像素 Q 版美短小猫头像由内联 SVG 绘制。
+Live site: [https://iris-hyt.github.io/yuting-pixel-portfolio/](https://iris-hyt.github.io/yuting-pixel-portfolio/)

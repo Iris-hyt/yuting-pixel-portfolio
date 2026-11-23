@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" fill="none">
+  <defs>
+    <path id="star" d="m50 5 12 31 33 2-26 20 9 32-28-17-27 17 9-32-27-20 33-2Z"/>
+  </defs>
+  <g stroke="#89d8f2" stroke-linecap="round" stroke-width="3.2">
+    <path d="M22 148 130 35M28 129 112 46M45 163 154 53M63 176 168 68"/>
+    <path d="M1178 145 1072 35M1172 128 1088 44M1157 164 1048 53M1139 176 1032 69"/>
+    <path d="M24 528 145 650M34 514 124 632M51 544 164 634M74 552 180 629"/>
+    <path d="M1176 528 1055 650M1166 514 1076 632M1149 544 1036 634M1126 552 1020 629"/>
+  </g>
+  <g stroke="#89d8f2" stroke-linejoin="round" stroke-width="6">
+    <use href="#star" transform="translate(145 22) scale(.34) rotate(12 50 50)"/>
+    <use href="#star" transform="translate(205 76) scale(.18) rotate(-10 50 50)"/>
+    <use href="#star" transform="translate(250 117) scale(.26) rotate(22 50 50)"/>
+    <use href="#star" transform="translate(912 35) scale(.22) rotate(-18 50 50)"/>
+    <use href="#star" transform="translate(990 78) scale(.33) rotate(10 50 50)"/>
+    <use href="#star" transform="translate(1086 98) scale(.18) rotate(-15 50 50)"/>
+    <use href="#star" transform="translate(73 465) scale(.27) rotate(-12 50 50)"/>
+    <use href="#star" transform="translate(145 505) scale(.18) rotate(18 50 50)"/>
+    <use href="#star" transform="translate(205 536) scale(.3) rotate(-7 50 50)"/>
+    <use href="#star" transform="translate(962 511) scale(.2) rotate(12 50 50)"/>
+    <use href="#star" transform="translate(1042 544) scale(.26) rotate(-18 50 50)"/>
+    <use href="#star" transform="translate(1108 596) scale(.33) rotate(9 50 50)"/>
+  </g>
+  <g fill="#89d8f2">
+    <circle cx="170" cy="103" r="3"/><circle cx="219" cy="149" r="2.5"/>
+    <circle cx="270" cy="66" r="2.5"/><circle cx="1015" cy="120" r="2.5"/>
+    <circle cx="1061" cy="55" r="3"/><circle cx="1111" cy="137" r="2.5"/>
+    <circle cx="55" cy="474" r="2.5"/><circle cx="113" cy="548" r="3"/>
+    <circle cx="235" cy="499" r="2.5"/><circle cx="981" cy="490" r="2.5"/>
+    <circle cx="1061" cy="503" r="3"/><circle cx="1146" cy="557" r="2.5"/>
+  </g>
+</svg>
