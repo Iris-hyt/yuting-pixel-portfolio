@@ -7,7 +7,7 @@
 - 推文链接：https://mp.weixin.qq.com/s/5FTx7iNjre3Jh4NEm_O0eA
 - “三只松鼠”休闲食品竞赛策划书链接：https://www.kdocs.cn/l/cagrDmr5srlT
 - 麻辣王子商演活动策划案：`assets/麻辣王子商演活动策划案.pptx`
-- 简历：`assets/黄钰婷-简历.pdf`
+- 简历：`assets/黄钰婷简历.pdf`
 
 ## 本地预览
 

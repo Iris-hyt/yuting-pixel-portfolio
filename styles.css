@@ -2,11 +2,11 @@
   --cream: #fff6e2;
   --cream-light: #fffaf0;
   --cream-deep: #f8e7c8;
-  --ink: #2f372f;
-  --mint: #d8f1c9;
-  --mint-deep: #86b871;
-  --lavender: #edd8f0;
-  --lavender-deep: #a67ab2;
+  --ink: #6b3027;
+  --mint: #c9e9fa;
+  --mint-deep: #65a8cb;
+  --lavender: #c9e9fa;
+  --lavender-deep: #65a8cb;
   --font-text: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   --font-display: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   --text-sm: clamp(0.84rem, 0.8rem + 0.16vw, 0.95rem);
@@ -177,7 +177,7 @@ svg {
 
 .hero-role {
   margin-bottom: 1.5rem;
-  color: #53665e;
+  color: #8b574b;
   font-size: var(--text-sm);
   font-weight: 600;
 }
@@ -264,7 +264,7 @@ svg {
 
 .hero-facts dd {
   margin-top: 0.28rem;
-  color: #5b6a63;
+  color: #8c584c;
   font-size: var(--text-sm);
   line-height: 1.45;
 }
@@ -274,7 +274,7 @@ svg {
   min-height: clamp(30rem, 55vw, 43rem);
   overflow: hidden;
   border: 4px solid var(--ink);
-  background: #eff8df;
+  background: #dff2fc;
 }
 
 .cat-stage__label {
@@ -298,33 +298,6 @@ svg {
   cursor: pointer;
 }
 
-.cat-bubble {
-  position: absolute;
-  z-index: 3;
-  top: clamp(4.25rem, 9vw, 6rem);
-  left: 1.2rem;
-  max-width: min(17rem, calc(100% - 2.4rem));
-  padding: 0.8rem 1rem;
-  border: 4px solid var(--ink);
-  background: var(--cream-light);
-  font-weight: 700;
-  line-height: 1.45;
-  text-align: left;
-}
-
-.cat-bubble::after {
-  content: "";
-  position: absolute;
-  bottom: -0.85rem;
-  left: 2.2rem;
-  width: 1rem;
-  height: 1rem;
-  border-right: 4px solid var(--ink);
-  border-bottom: 4px solid var(--ink);
-  background: var(--cream-light);
-  transform: rotate(45deg);
-}
-
 .cat-portrait {
   position: absolute;
   bottom: 1.5rem;
@@ -346,34 +319,6 @@ svg {
 
 .cat-button.is-poked .cat-portrait {
   animation: cat-hop 420ms steps(2, end);
-}
-
-.cat-touch {
-  position: absolute;
-  right: 1.1rem;
-  bottom: 1rem;
-  z-index: 2;
-  padding: 0.48rem 0.68rem;
-  border: 3px solid var(--ink);
-  border-bottom-width: 7px;
-  background: #fffef9;
-  color: var(--ink);
-  font-size: var(--text-sm);
-  font-weight: 700;
-  line-height: 1;
-  transition:
-    transform 140ms var(--ease),
-    border-width 140ms var(--ease),
-    background-color 140ms ease;
-}
-
-.cat-button:hover .cat-touch {
-  background: var(--cream-light);
-}
-
-.cat-button:active .cat-touch {
-  border-bottom-width: 3px;
-  transform: translateY(4px);
 }
 
 .intro {
@@ -427,7 +372,7 @@ svg {
 
 .section-heading > p {
   max-width: 17rem;
-  color: #5b6a63;
+  color: #8c584c;
   font-size: var(--text-sm);
   text-align: right;
 }
@@ -462,7 +407,7 @@ svg {
 
 .project-kind {
   margin-bottom: 1rem;
-  color: #5b6a63;
+  color: #8c584c;
   font-size: var(--text-sm);
   font-weight: 650;
 }
@@ -505,7 +450,7 @@ svg {
 .project-points li {
   position: relative;
   padding-left: 1.6rem;
-  color: #485951;
+  color: #7d4539;
 }
 
 .project-points li::before {
@@ -523,11 +468,11 @@ svg {
   gap: 0.1rem;
   margin-top: 1.9rem;
   padding: 1rem 1.15rem;
-  background: #f1f9e5;
+  background: #dff2fc;
 }
 
 .project-result span {
-  color: #53665e;
+  color: #7d4539;
   font-size: var(--text-sm);
 }
 
@@ -552,7 +497,7 @@ svg {
   gap: 1rem;
   padding: 1rem;
   border: 4px solid var(--ink);
-  background: #f8ecf5;
+  background: #c9e9fa;
 }
 
 .article-gallery__cover,
@@ -669,12 +614,12 @@ svg {
   justify-content: center;
   gap: 0.55rem;
   padding: clamp(1.35rem, 3vw, 2.5rem);
-  background: rgba(61, 8, 12, 0.76);
-  color: #ffffff;
+  background: rgba(197, 231, 249, 0.94);
+  color: var(--ink);
 }
 
 .campaign-cover__copy > span {
-  color: #f2b45d;
+  color: #8e4d3f;
   font-size: 0.78rem;
   font-weight: 800;
 }
@@ -691,7 +636,7 @@ svg {
 }
 
 .campaign-cover__copy > small {
-  color: #f0dec8;
+  color: #7c493e;
   font-size: var(--text-sm);
 }
 
@@ -730,7 +675,7 @@ svg {
 }
 
 .section-heading--light > p {
-  color: #51465e;
+  color: #7b473b;
 }
 
 .skill-list {
@@ -752,7 +697,7 @@ svg {
 
 .skill-list > div:nth-child(2),
 .skill-list > div:nth-child(3) {
-  background: #eef8df;
+  background: #c9e9fa;
 }
 
 .skill-list dt {
@@ -762,7 +707,7 @@ svg {
 
 .skill-list dd {
   margin-top: 0.75rem;
-  color: #43534b;
+  color: #7b473b;
   line-height: 1.65;
 }
 
@@ -788,7 +733,7 @@ svg {
 .path-heading > p {
   max-width: 27rem;
   margin-top: 1.5rem;
-  color: #52665d;
+  color: #875246;
 }
 
 .timeline {
@@ -809,7 +754,7 @@ svg {
 }
 
 .timeline time {
-  color: #5b6a63;
+  color: #8c584c;
   font-size: var(--text-sm);
   font-variant-numeric: tabular-nums;
 }
@@ -821,7 +766,7 @@ svg {
 
 .timeline p {
   margin-top: 0.3rem;
-  color: #52665d;
+  color: #875246;
   font-size: var(--text-sm);
 }
 
@@ -892,13 +837,13 @@ svg {
 
 .contact-location {
   margin-top: 2rem;
-  color: #5b6a63;
+  color: #8c584c;
   font-size: var(--text-sm);
 }
 
 .footer {
   padding-block: 2rem;
-  background: #e7f5d8;
+  background: #dff2fc;
   color: var(--ink);
 }
 
@@ -996,10 +941,6 @@ svg {
     animation: stage-in 820ms var(--ease) 170ms both;
   }
 
-  .motion-ready .cat-bubble {
-    animation: bubble-in 650ms var(--ease) 620ms both;
-  }
-
   .motion-ready .cat-portrait {
     animation: cat-breathe 4.5s steps(2, end) infinite;
   }
@@ -1020,17 +961,6 @@ svg {
   from {
     opacity: 0;
     transform: translateY(24px) scale(0.97);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes bubble-in {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -1155,11 +1085,6 @@ svg {
   .cat-stage {
     min-height: clamp(27rem, 120vw, 34rem);
     margin-top: 1rem;
-  }
-
-  .cat-bubble {
-    top: 4rem;
-    font-size: 0.95rem;
   }
 
   .cat-portrait {
@@ -1337,7 +1262,6 @@ svg {
 @media print {
   .site-header,
   .hero-actions,
-  .cat-touch,
   .toast,
   .footer {
     display: none !important;

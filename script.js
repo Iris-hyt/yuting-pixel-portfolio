@@ -32,21 +32,8 @@ if ("IntersectionObserver" in window) {
 }
 
 const catButton = document.querySelector("[data-cat-button]");
-const catMessage = document.querySelector("[data-cat-message]");
-const catLive = document.querySelector("[data-cat-live]");
-const catMessages = [
-  "先看我做的两个项目吧。",
-  "正在寻找市场运营与内容方向的机会。",
-  "合作或交流，都欢迎来信。",
-  "谢谢你认真看到了这里。",
-];
-let catMessageIndex = 0;
 
 catButton?.addEventListener("click", () => {
-  catMessageIndex = (catMessageIndex + 1) % catMessages.length;
-  const nextMessage = catMessages[catMessageIndex];
-  catMessage.textContent = nextMessage;
-  catLive.textContent = nextMessage;
   catButton.classList.remove("is-poked");
   void catButton.offsetWidth;
   catButton.classList.add("is-poked");
