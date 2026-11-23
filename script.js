@@ -6,6 +6,7 @@ const pageDeck = document.querySelector("[data-page-deck]");
 const pages = new Map(
   [...document.querySelectorAll("[data-page]")].map((page) => [page.dataset.page, page])
 );
+const pageOrder = [...pages.keys()];
 const pageLinks = [...document.querySelectorAll("[data-page-target]")];
 let activePage = null;
 let transitionTimer;
@@ -46,15 +47,43 @@ function showPage(pageKey, { push = true, animate = true } = {}) {
   window.clearTimeout(transitionTimer);
   const previousPage = activePage;
   const shouldAnimate = animate && !reduceMotion.matches;
+  const direction =
+    previousPage && pageOrder.indexOf(nextPage.dataset.page) < pageOrder.indexOf(previousPage.dataset.page)
+      ? "backward"
+      : "forward";
+
+  pages.forEach((page) => {
+    if (page === previousPage) return;
+    page.classList.remove(
+      "is-leaving",
+      "is-entering",
+      "is-turn-forward",
+      "is-turn-backward",
+      "is-enter-forward",
+      "is-enter-backward"
+    );
+  });
 
   if (previousPage && shouldAnimate) {
+    pageDeck.classList.add("is-transitioning", `is-turning-${direction}`);
     previousPage.classList.remove("is-active");
-    previousPage.classList.add("is-leaving");
+    previousPage.classList.add(
+      "is-leaving",
+      direction === "forward" ? "is-turn-forward" : "is-turn-backward"
+    );
   }
 
-  nextPage.classList.remove("is-leaving");
+  nextPage.classList.remove(
+    "is-leaving",
+    "is-turn-forward",
+    "is-turn-backward",
+    "is-enter-forward",
+    "is-enter-backward"
+  );
   nextPage.classList.add("is-active");
-  if (shouldAnimate) nextPage.classList.add("is-entering");
+  if (shouldAnimate) {
+    nextPage.classList.add("is-entering", `is-enter-${direction}`);
+  }
   nextPage.scrollTop = 0;
 
   updatePageAccessibility(nextPage);
@@ -71,10 +100,18 @@ function showPage(pageKey, { push = true, animate = true } = {}) {
 
   transitionTimer = window.setTimeout(() => {
     if (previousPage) {
-      previousPage.classList.remove("is-leaving", "is-entering");
+      previousPage.classList.remove(
+        "is-leaving",
+        "is-entering",
+        "is-turn-forward",
+        "is-turn-backward",
+        "is-enter-forward",
+        "is-enter-backward"
+      );
     }
-    nextPage.classList.remove("is-entering");
-  }, shouldAnimate ? 740 : 20);
+    nextPage.classList.remove("is-entering", "is-enter-forward", "is-enter-backward");
+    pageDeck.classList.remove("is-transitioning", "is-turning-forward", "is-turning-backward");
+  }, shouldAnimate ? 1040 : 20);
 }
 
 pageLinks.forEach((link) => {

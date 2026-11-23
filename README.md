@@ -4,12 +4,12 @@ An English-language, click-through portfolio built with plain HTML, CSS, and Jav
 
 ## Page flow
 
-- The cover shows only the hand-lettered “PORTFOLIO” wordmark, cat artwork, and stars.
-- Clicking the blue star opens the project index.
+- The cover shows only the centered hand-lettered “PORTFOLIO” wordmark and scattered stars.
+- Clicking the labeled blue star opens the project index.
 - Hovering or focusing a cat reveals its English project title. Clicking the cat opens that project page.
-- Project pages include the supporting details, original visuals, external work links, and previous/next navigation.
+- Project pages pair a large title and work link with the original visuals and previous/next navigation.
 - The About and Contact pages are accessed through the header or in-page navigation.
-- Desktop uses one fixed landscape page at a time. Mobile allows scrolling inside the active page when its content needs more room.
+- Desktop uses one fixed landscape page at a time. Forward and backward navigation turn the paper in opposite directions, and mobile allows scrolling inside the active page when its content needs more room.
 
 ## Files
 
